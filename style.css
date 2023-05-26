@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand";
+  user-select: none;
+  flex-direction: column;
+}
+
+button {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  font-size: 1.5em;
+  background: transparent;
+  border-style: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+button:active {
+  transform: scale(1.05);
+}
+
+#guessesContainer {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 0.5em;
+}
+
+.guess-container {
+  display: flex;
+}
+
+.guess-container div { 
+  vertical-align: middle;
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-right: 0.2em;
+  width: 1.5em;
+  height: 1.5em;
+  border-style: solid;
+  border-color: #757575;
+  border-width: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.reveal-container {
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 1.3em;
+  padding: 0.2em 0.7em 0.2em 0.7em;
+  margin-bottom: 0.5em;
+}
+
+#revealGuess {
+  font-weight: bold;
+}
